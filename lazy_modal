@@ -1,0 +1,46 @@
+<div class="overflow">
+          <div class="modal_window1">
+          I modal_window
+          </div>
+        </div>
+    
+ //css
+ /*modal_window */
+.headline_menu > .overflow {
+  display: none;
+  position: fixed;
+  margin-top: -137px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  text-align: center;
+}
+
+.overflow > .modal_window1 {
+  width: 100%;
+  max-width: 250px;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  margin-top: -270px;
+  margin-left: 193px;
+}
+/*end modal window*/
+
+//js
+var overflow = document.getElementsByClassName('menu')[0].onclick = function() {
+        var menu1 = document.querySelectorAll('li');
+          if(menu1 = true) {
+            var overflow = document.querySelector('.headline_menu > .overflow');
+                overflow.style.display="flex";
+                overflow.style.alignItems="center";
+                overflow.style.justifyContent="flex-start";
+                console.error(overflow);
+                
+              var closed = document.getElementsByClassName('overflow')[0].onclick = function() {
+                this.style.display='none';
+              }
+          }
+          console.log(menu1);
+        }
+      console.info(overflow);
